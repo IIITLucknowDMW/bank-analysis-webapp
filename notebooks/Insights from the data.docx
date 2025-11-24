@@ -1,0 +1,27 @@
+Insights from the data
+Categorical
+
+Numerical
+Age: The probability of churn increases with age until around 60 years old, after which it begins to decrease. This could be because customers younger than 60 are more established, have more complex financial needs, or are less tech-savvy and therefore less satisfied with online banking services. 
+ It indicates that churn risk increases with age up to around 60. This might be because customers in their late career or pre-retirement years are actively managing their finances and looking for the best deals. However, after 60, the churn risk decreases. This could be because retirees become less active in managing their accounts, have established long-term relationships with the bank, or have specific retirement products that tie them to the institution.
+To attract and keep the young customers, the bank needs to create new strategies to keep the customers in the bank. Specialized solutions for customers younger than 60.
+Balance: initially, as a customer's balance increases, their probability of churning also increases. This might seem counterintuitive at first.
+•	 Perhaps customers with slightly higher balances are more attractive to competitor banks offering better rates or incentives. They might also be more financially savvy and actively shop around for better deals.
+The turning point at 120.000 is crucial. It means that the probability of churning reaches its highest point when a customer's balance is around $120,000.
+•	This suggests that customers with balances around $120,000 are the most likely to leave the bank. This could be because they have accumulated enough wealth to consider more sophisticated investment options or private banking services offered by other institutions.
+After the turning point, the curve slopes downwards. This means that as the balance continues to increase beyond $120,000, the probability of churning decreases.
+•	Customers with very high balances (above $120,000) might be less likely to churn because they have established strong relationships with the bank, have access to premium services, or have complex financial arrangements that make switching banks more difficult. They might also be less sensitive to small differences in interest rates.
+This analysis suggests that the bank should pay particular attention to customers with balances around $120,000. They might need targeted retention strategies, personalized offers, or improved communication to prevent them from churning
+Estimated salary: Customers with $61.000 per year or higher salary expectations have higher probability of churn. It means the bank needs to pay more attention to customers with higher income.
+CreditScore: As credit score increases, probability of churn decreases. This might be because people with lower credit scores may not get the loans they wanted so they switch between banks.
+Tenure: The data shows that as tenure increases, churn probability decreases. This decrease is very slight indicating that other factors are also in play. 
+Number of products: 
+Initially, as NumOfProducts increases from 1 towards the turning point (1.83), the probability of churn decreases. This would explain a lower churn rate for customers with 2 products compared to those with only 1.
+However, after the turning point (1.83), as NumOfProducts continues to increase (towards 3 and 4), the probability of churn increases. This explains the high churn rates you observed for customers with 3 and 4 products.
+Real-World Interpretation (Example):
+
+A bank might observe this pattern:
+
+Customers with only one product might be more likely to churn because they have little connection with the bank.
+Customers who add a second product become more invested and less likely to leave.
+However, customers who accumulate 3 or 4 products might become overwhelmed with complexity, experience difficulties managing multiple accounts, or feel they are not getting personalized service. This leads to the increase in churn for these customers.
