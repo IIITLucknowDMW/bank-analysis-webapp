@@ -1,0 +1,72 @@
+
+/* General Grid Layout */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    padding: 20px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* Insights Actions Grid */
+.insights-actions {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+/* Generic Card Group Styling */
+.card-group {
+    background-color: white;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    height: 500px;assets\insights.css
+    overflow: hidden;
+}
+
+/* Group Titles */
+.group-title {
+    font-size: 1rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: #1e3a5f;
+}
+
+/* Inner Card Container */
+.cards-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+}
+
+/* Individual Cards */
+.card {
+    background-color: #f8f9fb;
+    border-radius: 8px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: left;
+    font-size: 0.9rem;
+    border-left: 4px solid #4f9fd8;
+}
+
+/* Card Title */
+.card h4 {
+    margin: 0 0 10px 0;
+    color: #1e3a5f;
+    font-size: 1rem;
+}
+
+/* Card Text */
+.card p {
+    margin: 0;
+    color: #555;
+    line-height: 1.5;
+}
+
+/* Specific Grid Areas */
+.insights { }
+.recommendations { }
+.actions { grid-column: 1 / -1; }
