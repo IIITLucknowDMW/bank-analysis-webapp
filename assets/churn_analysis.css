@@ -1,0 +1,394 @@
+/* ============================================
+   PROFESSIONAL CHURN ANALYSIS DASHBOARD CSS
+   ============================================ */
+
+/* Page Content Wrapper */
+.page-content {
+    width: 100%;
+    display: block;
+}
+
+/* General Grid Layout */
+.grid-container {
+    display: grid;
+    gap: 16px;
+    padding: 16px;
+    width: 100%;
+    box-sizing: border-box;
+    background-color: #f8f9fb;
+}
+
+/* Main Churn Analysis Grid */
+.churn-analysis {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: auto;
+    gap: 16px;
+}
+
+/* ============================================
+   CARD & CONTAINER STYLING
+   ============================================ */
+
+/* Generic Card Group Styling */
+.card-group {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    padding: 16px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+    border: 1px solid #e5e7eb;
+}
+
+/* Group Titles */
+.group-title {
+    font-size: 1rem;
+    font-weight: 600;
+    margin: 0;
+    margin-bottom: 8px;
+    color: #1e293b;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+/* Individual Cards */
+.card {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding: 14px;
+    border-radius: 8px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+    text-align: left;
+    background-color: #ffffff;
+    overflow: hidden;
+    height: 100%;
+    border: 1px solid #e5e7eb;
+    transition: all 0.3s ease;
+}
+
+.card:hover {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-color: #4f9fd8;
+}
+
+.card .js-plotly-plot {
+    width: 100% !important;
+    height: 100% !important;
+    position: relative !important;
+}
+
+.card > div:last-child {
+    flex: 1;
+    min-height: 240px;
+    width: 100%;
+    position: relative;
+}
+
+.card > div:last-child .js-plotly-plot {
+    width: 100% !important;
+    height: 100% !important;
+}
+
+/* ============================================
+   TEXT & TYPOGRAPHY
+   ============================================ */
+
+.card-header {
+    display: flex;
+    align-items: center;
+    background: none;
+    border: none;
+    padding: 0;
+    font-size: 11px;
+    color: #64748b;
+    gap: 6px;
+    margin: 0;
+    text-transform: uppercase;
+    letter-spacing: 0.3px;
+    font-weight: 500;
+}
+
+.card p {
+    margin: 0;
+    margin-bottom: 2px;
+    font-size: 12px;
+    color: #475569;
+    font-weight: 500;
+}
+
+.card-title {
+    display: flex;
+    align-items: center;
+    font-size: 11px;
+    font-weight: 600;
+    color: #1e293b;
+    margin: 0;
+    gap: 6px;
+    text-transform: uppercase;
+    letter-spacing: 0.3px;
+}
+
+.card-title i {
+    font-size: 13px;
+    color: #4f9fd8;
+    margin: 0;
+}
+
+.kpi-value {
+    font-size: 28px;
+    font-weight: 700;
+    color: #1e3a5f;
+    text-align: left;
+    line-height: 1.2;
+}
+
+/* ============================================
+   GRID AREA DEFINITIONS
+   ============================================ */
+
+/* KPI Container - Top Row */
+.churn-kpi-container {
+    grid-column: 1 / -1;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 12px;
+    background-color: transparent;
+    padding: 0;
+}
+
+.churn-kpi-container > h3 {
+    grid-column: 1 / -1;
+    background: linear-gradient(135deg, #1e3a5f 0%, #2d5a8c 100%);
+    color: #ffffff;
+    padding: 14px 16px;
+    margin: 0;
+    border-radius: 8px;
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.churn-kpi-container .card {
+    grid-column: span 1;
+    height: auto;
+    min-height: 100px;
+    padding: 16px;
+    background: linear-gradient(135deg, #ffffff 0%, #f8f9fb 100%);
+}
+
+/* Demographics Section */
+.churn-graph-container1 {
+    grid-column: 1 / -1;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
+}
+
+.churn-graph-container1 > .card {
+    grid-column: span 1;
+    min-height: 300px;
+}
+
+.churn-graph-container1 > .card > div:last-child {
+    min-height: 270px;
+}
+
+.churn-graph-container1 > h3 {
+    grid-column: 1 / -1;
+}
+
+/* Product Usage Section */
+.churn-graph-container2 {
+    grid-column: 1 / -1;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+}
+
+.churn-graph-container2 > .card {
+    grid-column: span 1;
+    min-height: 300px;
+}
+
+.churn-graph-container2 > .card > div:last-child {
+    min-height: 270px;
+}
+
+.churn-graph-container2 > h3 {
+    grid-column: 1 / -1;
+}
+
+/* Behavior Analysis Section */
+.behaviour-container {
+    grid-column: 1 / -1;
+    min-height: 420px;
+    background-color: #ffffff;
+    padding: 20px !important;
+    border-radius: 8px;
+    border: 1px solid #e5e7eb;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+}
+
+.behaviour-container > h3 {
+    margin: 0 0 16px 0;
+    padding-bottom: 12px;
+    border-bottom: 2px solid #4f9fd8;
+    font-size: 1.1rem;
+}
+
+.behaviour-container .card {
+    min-height: 400px;
+    background-color: transparent !important;
+    border: none !important;
+    box-shadow: none !important;
+    padding: 0 !important;
+}
+
+.behaviour-container .card > div:last-child {
+    min-height: 380px;
+}
+
+.behaviour-container .card > p {
+    color: #1e293b !important;
+    font-weight: 600;
+    font-size: 14px;
+    margin-bottom: 12px !important;
+}
+
+/* ============================================
+   INSIGHTS STYLING - PROFESSIONAL CARDS
+   ============================================ */
+
+.insight-container1,
+.insight-container2 {
+    grid-column: 1 / -1;
+    min-height: auto !important;
+    display: block !important;
+    background-color: #ffffff !important;
+    padding: 20px !important;
+    border-radius: 8px;
+    border: 1px solid #e5e7eb;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+}
+
+.insight-container1 > h3,
+.insight-container2 > h3 {
+    margin: 0 0 16px 0;
+    padding-bottom: 12px;
+    border-bottom: 2px solid #4f9fd8;
+    font-size: 1.1rem;
+}
+
+.insight-container1 > .card,
+.insight-container2 > .card {
+    padding: 0 !important;
+    min-height: auto !important;
+    display: block !important;
+    background-color: transparent !important;
+    border: none !important;
+    box-shadow: none !important;
+}
+
+.insight {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.insight > div {
+    padding: 12px;
+    background: linear-gradient(135deg, #f0f7ff 0%, #f8f9fb 100%);
+    border-left: 3px solid #4f9fd8;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+}
+
+.insight > div:hover {
+    background: linear-gradient(135deg, #e0f0ff 0%, #f0f4fb 100%);
+    border-left-color: #1e3a5f;
+    box-shadow: 0 2px 4px rgba(79, 159, 216, 0.1);
+}
+
+.insight p {
+    margin: 3px 0 !important;
+    font-size: 13px !important;
+    line-height: 1.6 !important;
+    color: #475569 !important;
+}
+
+/* Insight titles styling */
+.insight p[style*="3498db"] {
+    color: #1e3a5f !important;
+    font-weight: 700 !important;
+    font-size: 14px !important;
+    margin-bottom: 8px !important;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.insight p:first-child {
+    margin-top: 0 !important;
+}
+
+/* ============================================
+   RESPONSIVE DESIGN
+   ============================================ */
+
+@media (max-width: 1200px) {
+    .churn-kpi-container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    
+    .churn-graph-container1 {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .churn-graph-container2 {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 768px) {
+    .grid-container {
+        padding: 12px;
+        gap: 12px;
+    }
+    
+    .churn-kpi-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .churn-graph-container1,
+    .churn-graph-container2 {
+        grid-template-columns: 1fr;
+    }
+    
+    .kpi-value {
+        font-size: 22px;
+    }
+}
+
+/* ============================================
+   ANIMATION & TRANSITIONS
+   ============================================ */
+
+.card {
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+    transform: translateY(-2px);
+}
+
+.insight-container1 { 
+  grid-area: 7 / 1 / 8 / 6;
+}
+
+.insight-container2 { 
+  grid-area: 8 / 1 / 9 / 6;
+}
+ 

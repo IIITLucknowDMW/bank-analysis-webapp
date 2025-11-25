@@ -1,0 +1,71 @@
+
+/* General Grid Layout */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    padding: 20px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* Segmentation Grid */
+.segmentation {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    padding: 20px;
+}
+
+/* Generic Card Group Styling */
+.card-group {
+    background-color: white;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    height: 500px;
+    grid-column: 1 / -1;
+}
+
+/* Group Titles */
+.group-title {
+    font-size: 1rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: #1e3a5f;
+}
+
+/* Inner Card Container */
+.cards-container {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 10px;
+}
+
+/* Individual Cards */
+.card {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: left;
+    font-size: 0.7rem;
+    height: 500px;
+}
+
+/* Fixed height for all graph containers */
+.card > div, .card-group > div {
+    height: 450px !important;
+}
+
+/* Fix Plotly graph height */
+.card .plotly-graph-div, .card-group .plotly-graph-div {
+    height: 450px !important;
+}
+
+/* Specific Grid Areas - Removed to prevent oversize */
+.churn-rate { }
+.segment-distribution { }
+.segment-descriptions { }
+.segment-radar { }
+.churn-rate-product { }
